@@ -6,7 +6,7 @@
 Intermediate to Advanced Concepts in Swift
 
 <h3 align="center">
-   <img src="screenshots.jpg" alt="Screenshot of Swift Playground" />
+   <img src="screenshots.png" alt="Screenshot of Swift Playground" />
 </h3>
 
 ## Compatibility
