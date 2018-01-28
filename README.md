@@ -11,8 +11,5 @@ Intermediate to Advanced Concepts in Swift
 
 ## Compatibility
 
-This project is written in Swift 4 and requires Xcode 9.1 to build and run.
+This project is written in Swift 4 and requires Xcode 9 to build and run.
 
-## Author
-
-* [Vinoth Vino](https://twitter.com/vinothvino42)
