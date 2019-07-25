@@ -12,11 +12,11 @@ addFunction(2, 2)
 
 //: Closure to add two numbers
 // Method 1
-var addClosures: (Int, Int) -> Int = { (number1: Int, number2: Int) in
+var addClosuresOne: (Int, Int) -> Int = { (number1: Int, number2: Int) in
     return number1 + number2
 }
 
-addClosures(2, 4)
+addClosuresOne(2, 4)
 
 // Method 2
 var addClosuresTwo = { (number1: Int, number2: Int) in
@@ -33,6 +33,13 @@ addClosuresThree(4, 4)
 // Method 4
 var addClosuresFour: (Int, Int) -> Int = { $0 + $1 }
 addClosuresFour(6, 3)
+
+// Method 5
+var addClosuresFive: (Int, Int) -> Int = {
+    return $0 + $1
+}
+addClosuresFive(6, 2)
+
 
 //: Example with () -> String
 func callStringWithFunction() -> String {

@@ -40,7 +40,7 @@ let handlerBlock: (Bool) -> () = {
 myHandlerBlock(true)
 
 //: Design Function
-func downloadingImage(completionBlock: (Bool) -> Void) {
+func downloadImage(completionBlock: (Bool) -> Void) {
     for _ in 1...5 {
         print("Downloading")
     }
@@ -48,16 +48,16 @@ func downloadingImage(completionBlock: (Bool) -> Void) {
 }
 
 //: Pass Closure Indirectly
-downloadingImage(completionBlock: handlerBlock)
+downloadImage(completionBlock: handlerBlock)
 
 //: Pass Closure Directly
-downloadingImage(completionBlock: { (isSuccess) in
+downloadImage(completionBlock: { (isSuccess) in
     if isSuccess {
         print("Done")
     }
 })
 
-downloadingImage(completionBlock: {
+downloadImage(completionBlock: {
     if $0 {
         print("Download has been done")
         // Animation
@@ -76,8 +76,8 @@ let handler: ([String]) -> Void = { (array) in
 handler(["Vino", "Vinoth", "iOS Dev"])
 
 func workHard(doneBlock: ([String]) -> Void) {
-    for _ in 1...8 {
-        print("Getting datas")
+    for i in 1...50 {
+        print("Downloading \(i)%")
         // download
     }
     doneBlock(["image1", "image2", "image3", "image4", "image5"])
