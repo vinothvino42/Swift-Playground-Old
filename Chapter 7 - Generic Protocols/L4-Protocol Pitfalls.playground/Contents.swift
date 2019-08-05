@@ -50,5 +50,6 @@ func enterListCell<T: Listable>(enterCell: T) {}
 enterListCell(enterCell: FolderCell())
 enterListCell(enterCell: ListCell())
 
-let cell: Listable = arc4random() * 2 == 0 ? FolderCell() : ListCell()
+// Error
+//let cell: Listable = arc4random() * 2 == 0 ? FolderCell() : ListCell()
 // let cell: [Listable] = [CollectionCell(), ListCell()]
